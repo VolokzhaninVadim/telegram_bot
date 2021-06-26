@@ -15,7 +15,7 @@
 
 После создания бота добавляем в контакты. 
 
-# ID пользовтаеля 
-ID пользовтаеля узнаем через бота `@getmyid_bot`.
+# ID пользователя 
+ID пользователя узнаем через бота `@getmyid_bot`.
 
-Через бота отобрааю [балансы](https://github.com/VolokzhaninVadim/balance).
+Через бота отображаю [балансы](https://github.com/VolokzhaninVadim/balance).
