@@ -44,8 +44,6 @@ def balance_bd():
                      ,balance
             from 
                     balance.balance
-            where 
-                    id in (5, 6, 7)
             order by
                     id
             """
@@ -67,7 +65,7 @@ def current_balance():
     """
     balance_df = balance_bd()
 # Создадим словарь для обработки id
-    id_text_dict = {5 : 'Основной счет', 6 : 'Копилка', 7 : 'Рабство'}
+    id_text_dict = {2 : 'Жена телефон', 3 : 'Интернет', 4 : 'Мой телефон', 5 : 'Основной счет', 6 : 'Копилка', 7 : 'Рабство'}
 # Подменим id на текст
     balance_df['id'] = balance_df['id'].apply(lambda x: id_text_dict[x])
     return balance_df.to_string(index = False, header = False)
@@ -85,10 +83,10 @@ def get_text_messages(msg):
         (str) - сообщение с балансом.
     """
     global ids
-    if message.from_user.id not in ids:
-        bot.send_message(message.chat.id, 'Ошибся адресом, дружок')
+    if msg.from_user.id not in ids:
+        bot.send_message(msg.chat.id, 'Ошибся адресом, дружок')
     else:
-        if message.text == "Баланс":
-            bot.send_message(message.from_user.id, current_balance())
+        if msg.text == "Баланс":
+            bot.send_message(msg.from_user.id, current_balance())
 
 bot.polling(none_stop = True, interval = 0)

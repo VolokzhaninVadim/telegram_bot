@@ -17,3 +17,5 @@
 
 # ID пользовтаеля 
 ID пользовтаеля узнаем через бота `@getmyid_bot`.
+
+Через бота отобрааю [балансы](https://github.com/VolokzhaninVadim/balance).
