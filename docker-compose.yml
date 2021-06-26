@@ -1,0 +1,14 @@
+version: '2'
+services:
+    
+  flask:
+    build: 
+      context: .
+    image: python:latest
+    container_name: telegram-bot
+    restart: always
+    environment:
+      PG_PASSWORD: ${PG_PASSWORD}     
+      LOGIN_NAME: ${USER}     
+      PG_HOST : ${PG_HOST}
+      TELEGRAM_TOKEN : ${TELEGRAM_TOKEN}

@@ -1,0 +1,4 @@
+pytelegrambotapi
+SQLAlchemy==1.3.20
+pandas==1.1.4
+
