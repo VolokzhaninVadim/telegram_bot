@@ -9,7 +9,7 @@
 Устанавливаем docker compose: `sudo pacman -S docker-compose`
 
 # Регистрация бота 
-Находим в telegram `@BotFather` и отправляем /newbot для регистрации нового бота, далее следуем инструкциям. 
+Находим в telegram `@BotFather` и отправляем `/newbot` для регистрации нового бота, далее следуем инструкциям. 
 
 Описание библиотеки [pytelegrambotapi](https://github.com/eternnoir/pyTelegramBotAPI).
 
